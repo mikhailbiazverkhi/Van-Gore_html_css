@@ -1,0 +1,62 @@
+#titre-biografie, 
+h2, 
+#contenu-de-navigation {
+    text-align: center;
+}
+
+#à-propos-van-gore {
+    padding: 10px;
+    background-color: coral;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+#description {
+    width: 800px;
+}
+
+#image-van-gore {
+    height: 300px;
+    border-radius: 10px;
+}
+
+#bloc-de-navigation {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+    display: table;
+    padding-right: 15px;
+    border: 1px solid gray;
+    background-color: gainsboro;
+}
+
+a {    
+    text-decoration: none;
+}
+
+.numéro {
+    color: #202122;
+}
+
+.lien-de-navigation:hover {
+    color: blue;
+} 
+
+#sections-de-texte {
+    padding-top: 10px;
+    background-color: beige;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#sections-de-texte > div > p, h3 {
+    padding: 10px;
+}
+
+

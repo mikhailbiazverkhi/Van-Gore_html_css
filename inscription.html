@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Van Gore</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/inscription.css">
+</head>
+<body>
+
+    <!-- en-tête section -->
+    <div id="en-tête">
+        <div id="logo-conteneur">
+            <a id="alignement-correction" href="accueil.html">
+                <img img id="image-logo" src="images/logo.jfif">
+            </a> 
+            <a href="accueil.html">
+                <span id="logo-titre"><h1>Van Gore</h1></span>
+            </a> 
+        </div>
+        <div id="navigation">
+            <a class="lien-navigation" href="accueil.html">Accueil</a>
+            <a class="lien-navigation" href="biographie.html">Biographie</a>
+            <a class="lien-navigation" href="portfolio.html">Portfolio</a>
+            <a class="lien-navigation" href="#"><span class="lien-bloqué">Inscription</span></a>
+        </div>
+    </div>
+
+    <!-- sections de la page -->
+    <h1 id="titre-demange-d-inscription">La demange d'inscription</h1>
+    <form>
+        <div id="champs">
+            <div id="form-conteneur-1">
+                <div>
+                    <label for="prénom">Prénom: <span>*</span></label>
+                    <input id="prénom" type="text" name="prénom" required>
+                </div>
+            
+                <div>
+                    <label for="nom">Nom: <span>*</span></label>
+                    <input id="nom" type="text" name="nom" required>
+                </div>
+            
+                <div>
+                    <label for="courriel">Adresse courriel: <span>*</span></label>
+                    <input id="courriel" type="email" name="courriel" required>
+                </div>
+            
+                <div class="radio">
+                    <div>Le type de cours désiré: <span>*</span></div>
+                    <div>
+                        <input id="groupe" type="radio" name="type-de-cours-désiré" value="groupe" required>
+                        <label for="groupe">Groupe</label>
+                    </div>
+                    <div>
+                        <input id="individuel" type="radio" name="type-de-cours-désiré" value="individuel" required>
+                        <label for="individuel">Individuel</label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="form-conteneur-2">
+                <div>Les journées de disponibilités:</div>
+                <div class="checkbox">
+                    <div>
+                        <input id="lundi" type="checkbox" name="journées-de-disponibilités" value="lundi">
+                        <label for="lundi">Lundi</label>
+                    </div>
+                    <div>
+                        <input id="mardi" type="checkbox" name="journées-de-disponibilités" value="mardi">
+                        <label for="mardi">Mardi</label>
+                    </div>
+                    <div>
+                        <input id="mercredi" type="checkbox" name="journées-de-disponibilités" value="mercredi">
+                        <label for="mercredi">Mercredi</label>
+                    </div>
+                    <div>
+                        <input id="jeudi" type="checkbox" name="journées-de-disponibilités" value="jeudi">
+                        <label for="jeudi">Jeudi</label>
+                    </div>
+                    <div>
+                        <input id="vendredi" type="checkbox" name="journées-de-disponibilités" value="vendredi">
+                        <label for="vendredi">Vendredi</label>
+                    </div>
+                    <div>
+                        <input id="samedi" type="checkbox" name="journées-de-disponibilités" value="samedi">
+                        <label for="samedi">Samedi</label>
+                    </div>
+                    <div>
+                        <input id="dimanche" type="checkbox" name="journées-de-disponibilités" value="dimanche">
+                        <label for="dimanche">Dimanche</label>
+                    </div>
+                </div>
+            </div>
+            <div id="form-conteneur-3">
+                <div>
+                    <label for="date-de-fête">La date de fête: <span>*</span></label>
+                    <input id="date-de-fête" type="date" name="date-de-fête" max="2009-01-15" required>
+                </div>
+
+                <div>
+                    <label for="langue">La langue désirée: <span>*</span></label>
+                    <select name="langue" id="langue" required>
+                        <option value="">-- Aucune --</option>
+                        <option value="Français">Français</option>
+                        <option value="Anglais">Anglais</option>
+                        <option value="Espagnol">Espagnol</option>
+                        <option value="Portugais">Portugais</option>
+                    </select>
+                </div>
+
+                <div class="commentaire">
+                    <label for="commentaire">Commentaire:</label>
+                    <textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <p id="texte-attention">Attention: * - les champs obligatoires!</p>
+
+        <div class="buttons">
+            <button id="submit" type="submit">Envoyer</button>
+        </div>
+    </form>
+
+    <div id="liens-de-transition">
+        <a href="accueil.html"><span class="lien-de-transition">Page d'accueil>>></span></a>
+        <a href="#en-tête"><span class="lien-de-transition">En haut>>></span></a>
+    </div>
+
+
+    <!-- pied de page -->
+    <div id="pied-de-page">
+        <div id="copyrights">
+            <P>Vincent Van Gore</P>
+            <P>Copyrights 2023</P>
+        </div>
+        <div id="courriel-bande">
+            <p>Courriel:</p>
+            <a id="adresse-courriel" href="mailto:info@vincentvangore.ca">info@vincentvangore.ca</a>
+        </div>
+        <div id="lien-facebook">
+            <a href="https://facebook.com">
+                <img id="logo-facebook-image" src="https://potton.ca/wp-content/uploads/2020/03/logo-facebook.png">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

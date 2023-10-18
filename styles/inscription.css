@@ -1,0 +1,123 @@
+#titre-demange-d-inscription {
+    text-align: center;
+}
+
+form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: burlywood;
+}
+
+#champs
+{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+#form-conteneur-1,
+#form-conteneur-1 > div,
+#form-conteneur-1 > .radio {
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#form-conteneur-1 > div {
+    gap: 10px;
+}
+
+#form-conteneur-1 > .radio {
+    gap: 15px;
+}
+
+#form-conteneur-2 {
+    min-width: 210px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#form-conteneur-2 > .checkbox {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#form-conteneur-2 > .checkbox > div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#form-conteneur-3 {
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#form-conteneur-3 > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#champs > * > * > label > span,
+#champs > * > * > div > span
+{
+    color: red;
+}
+
+input, select, textarea {
+    background-color: #eeeeee;
+    border: 1px solid #e6e6e6;
+}
+
+input {
+    height: 20px;
+}
+
+select {
+    height: 24px;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus, select:focus{
+    outline: 0;
+}
+
+#texte-attention {
+    padding: 20px;
+    text-align: center;
+    color: red;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#submit{
+    margin-top: 24px;
+    margin-right: 100px;
+    background-color: #2254F5;
+    border: 0;
+    color: white;
+    border-radius: 10px;
+
+    min-width: 80px;
+    min-height: 40px;
+}
